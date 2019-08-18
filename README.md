@@ -3,6 +3,8 @@ For original documentation please refer to https://github.com/tzutalin/labelImg.
 install python-pcl - Latest commit 1d83d2d plus the solution on the following issue
 https://github.com/strawlab/python-pcl/issues/127
 
+![image](pic1.png)  ![image](pic2.png)
+
 All changes in the labelImg.py file are marked by "# Blender change".  
 File changed include:
 * labelImg.py
