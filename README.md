@@ -46,7 +46,7 @@ File added include:
    
 ### How to create 3D oriented bounding boxes in Blender
 * Open blender and the 3D model (a .blend file)
-* Import addon.py to blender, and click the botton "create bounding boxes". Everything is already embedded.
+* Import vis_simulator_addon.py to blender, and click the botton "create bounding boxes". Everything is already embedded.
 
 ### Notes
 * Coordinate systems of the pixel image, camera and world are as shown below:
