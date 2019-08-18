@@ -25,8 +25,12 @@ File added include:
         * imu_data.csv
         * pose_data.csv
     * **2_Blender**
-        * **cam0_rgbd** 
+        * **cam0_original** 
+            * .png images
+        * **cam0_exr** 
             * .exr images
+        * **cam0_segmented** 
+            * .png images
     * **3_labelimg**
         * .xml Pascal format labels
         * world_bbox.txt
@@ -40,15 +44,11 @@ File added include:
    * box info is stored in the format "xm ym zm xd zd yd ex ez ey" where "m" stands for midpoint, "d" stands for dimension, and "e" stands for Euler angle
    * The path to the saved "world_bbox.txt" would be displayed in a pop-up window; it should be /path/to/project/output/3_labelimg/world_bbox.txt.
    
-### How to create 3D bounding boxes in Blender
+### How to create 3D oriented bounding boxes in Blender
 * Open blender and the 3D model (a .blend file)
-* Open Text Editor
-* Open the script "create_blender_bbox.py" from this repo, drag the border to view file content, and change the "/path/to/project" to the actual path
-* Click "Run Script"
-Note: Another way would be to run "./blender -b --python /path/to/create_blender_box.py" directly from command line. However, sometimes this doesn't work...
+* Import addon.py to blender, and click the botton "create bounding boxes". Everything is already embedded.
 
 ### Notes
-* For changes in resources.qrc, run "rcc -binary resources.qrc -o resources.rcc"
 * Coordinate systems of the pixel image, camera and world are as shown below:
 <img src="./demo/pixel_camera.png" width="400" title="pixel camera">
 <img src="./demo/blender_coordinate_system.jpg" width="100" title="blender world">
